@@ -18,16 +18,17 @@ Simple CRUD project made with larevel
 
 -   Clone repository or download and extract .zip file into _www_ folder inside ampps directory
 -   Navigate to project directory and use command line to install required dependancies
--   -   example _composer install_
--   -   example _npm install_
+-   -   example **composer install**
+-   -   example **npm install**
+-   Rename **.env.example** file to **.env**:
 
-**Then**
+**Option 1**
 Import database into MySQL from project directory _/dump_
 
-**or**
+**Option 2**
 
 1. create MySQL database
-2. inside _.env_ file add your connection to database parameters:
+2. Enter your database parameters into **.env** file
 
 ```
 DB_CONNECTION=mysql
@@ -38,11 +39,12 @@ DB_USERNAME=YOUR_DB_USERNAME
 DB_PASSWORD=YOUR_DB_PASSWORD
 ```
 
-3. Type _php artisan migrate_ into command line to create required tables
-4. Type _php artisan db:seed --class=UserSeeder_ to create admin user (**name:** admin **pass:** admin123)
+3. Type **php artisan migrate** into command line to create required tables
+4. Type **php artisan db:seed --class=UserSeeder** to create admin user (**name:** admin **pass:** admin123)
 
 **Finnaly**
 Type **php artisan serve** into command line to start your server.
+On first start press **generate key** and refresh the page
 
 _hope it works_
 
